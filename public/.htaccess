@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^promolecules\.com$ [NC]
+RewriteRule ^ https://www.promolecules.com%{REQUEST_URI} [L,R=301]
