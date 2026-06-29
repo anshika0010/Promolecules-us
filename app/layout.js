@@ -7,6 +7,8 @@ import Script from "next/script";
 import PreloaderWrapper from "@/components/PreloaderWrapper";
 import localFont from "next/font/local";
 import CountryPopup from "@/components/CountryPopup";
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,13 +18,13 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+
 const gloomyFont = localFont({
-  src: "../public/gloomy_things/Gloomy Things.ttf",
-  
+  src: "./fonts/GloomyThings.otf",
   variable: "--font-gloomy",
   display: "swap",
 });
-
 // ── Verification meta tags go here, NOT in <head> ────────────────
 export const metadata = {
   verification: {

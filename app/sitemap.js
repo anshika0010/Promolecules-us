@@ -44,6 +44,12 @@ export default async function sitemap() {
       priority: 0.8,
       changeFrequency: "monthly",
     },
+       {
+      path: "/high-stim-pre-workout/",
+      priority: 1.0,
+      changeFrequency: "daily",
+    },
+
 
     {
       path: "/blog/",
