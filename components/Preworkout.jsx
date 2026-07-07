@@ -315,131 +315,54 @@ export default function Preworkout() {
       
     <div className="bg-black text-white font-sans overflow-x-hidden">
       {/* ── HERO ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50 z-0" />
+    <section className="relative min-h-screen overflow-hidden">
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/50 z-0" />
 
-        {/* Background Image */}
-     <div className="absolute inset-0 hidden lg:block">
-  <img
-    src="/Father-of-insane.webp"
-    alt="Athlete training"
-    className="w-full h-full object-cover object-center"
+  {/* Background Image */}
+  <div className="absolute inset-0 hidden lg:block">
+    <img
+      src="/high-stim-image.jpeg"
+      alt="Athlete training"
+      className="w-full h-full object-cover object-center"
+    />
+  </div>
+
+  <HexPattern />
+
+  {/* Red Glow */}
+  <div
+    className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full opacity-20 pointer-events-none"
+    style={{
+      background: "radial-gradient(circle, #dc2626, transparent 70%)",
+    }}
   />
-</div>
 
-        {/* Optional Pattern */}
-        <HexPattern />
-
-        {/* Red Glow */}
-        <div
-          className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full opacity-20 pointer-events-none"
-          style={{
-            background: "radial-gradient(circle, #dc2626, transparent 70%)",
-          }}
-        />
-
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto w-full px-6 mr-8">
-          <div className="flex justify-end">
-            <div className="max-w-3xl text-left">
-              <div className="flex items-center gap-3 mb-7">
-                <div className="h-px w-10 bg-red-500" />
-                <span className="text-red-400 text-[10px] font-black tracking-[0.35em] uppercase">
-                  Most Advanced High Stim Pre Workout Supplement
-                </span>
-              </div>
-
-              <h1 className="font-black leading-none tracking-tight mb-3">
-                <span className="block text-5xl uppercase  text-white">
-                  Trusted High-Performance
-                </span>
-                <span className="block text-5xl uppercase text-red-500">
-                  Sports Nutrition Brand
-                </span>
-                <span className="block text-3xl  text-zinc-200">
-                  AVAILABLE NOW
-                </span>
-              </h1>
-
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-8">
-                Designed for the serious athlete, bodybuilder and high
-                performance training. Promolecules give you explosive energy,
-                laser focus, massive pumps and unparalleled endurance.
-                <span className="text-red-400 font-bold">
-                  {" "}
-                  Promolecules is for people who want more out of every workout.
-                  Our science-backed formulas are engineered to help you train
-                  harder, recover stronger, and maximize performance without
-                  compromise.
-                </span>
-              </p>
-
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="#products"
-                  className="bg-red-600 hover:bg-red-500 text-white font-black text-xs px-8 py-4 tracking-[0.2em] uppercase transition-all hover:scale-105"
-                >
-                  Shop Products →
-                </a>
-
-                <a
-                  href="#how-it-works"
-                  className="border border-zinc-700 hover:border-white text-zinc-300 hover:text-white font-bold text-xs px-8 py-4 tracking-widest uppercase"
-                >
-                  How It Works
-                </a>
-              </div>
-
-              <div className="flex items-center gap-5 mt-10 pt-8 border-t border-zinc-700">
-                <div className="flex -space-x-2">
-                  {["A", "R", "V", "K", "P"].map((l, i) => (
-                    <div
-                      key={i}
-                      className="w-8 h-8 rounded-full bg-red-900/70 border-2 border-black flex items-center justify-center text-[10px] font-black text-red-300"
-                    >
-                      {l}
-                    </div>
-                  ))}
-                </div>
-
-                <div>
-                  <div className="flex gap-0.5">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <span key={i} className="text-red-500 text-xs">
-                        ★
-                      </span>
-                    ))}
-                  </div>
-
-                  <p className="text-xs text-zinc-300 mt-0.5">
-                    Trusted by 10,000+ athletes across India
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── STAT BAR ── */}
-      <div className="bg-red-600 py-4 border-y border-red-500/20">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {[
-            ["½ Scoop", "Outperforms 2 Scoops"],
-            ["0g", "Filler Ingredients"],
-            ["100%", "Clinically Dosed"],
-            ["Zero", "Proprietary Blends"],
-          ].map(([s, l]) => (
-            <div key={s}>
-              <div className="text-xl font-black text-white">{s}</div>
-              <div className="text-red-200 text-[10px] uppercase tracking-wider font-bold">
-                {l}
-              </div>
-            </div>
-          ))}
-        </div>
+  {/* Content */}
+  <div className="relative z-10 max-w-7xl mx-auto h-screen px-1 flex justify-end items-start pt-20">
+    <div className="max-w-3xl text-left">
+      <div className="flex items-start gap-3 mb-7">
+        <div className="h-px w-10 bg-red-500 mt-2" />
+        <span className="text-red-400 text-[10px] font-black tracking-[0.35em] uppercase">
+          Most Advanced High Stim Pre Workout Supplement
+        </span>
       </div>
+
+      <h1 className="font-black leading-none tracking-tight mb-3">
+        <span className="block text-5xl uppercase text-white">
+          Trusted High-Performance
+        </span>
+        <span className="block text-5xl uppercase text-red-500">
+          Sports Nutrition Brand
+        </span>
+        <span className="block text-3xl text-zinc-200">
+          AVAILABLE NOW
+        </span>
+      </h1>
+    </div>
+  </div>
+</section>
+
 
       {/* ── PRODUCTS ── */}
       <section id="products" className="py-24 relative">

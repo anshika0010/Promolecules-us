@@ -231,12 +231,15 @@ export default function ProductDetail({ product }) {
 
   const sections = [
 
+
     { title: "DESCRIPTION", content: product.description },
     { title: "KEY BENEFITS", content: product.keyBenefits },
     { title: "WHY CHOOSE US?", content: product.whychooseus },
     { title: "HOW TO USE", content: product.howToUse },
-    { title: "WHAT TO AVOID", content: product.whatToAvoid },
+    { title: "SAFETY INFORMATION", content: product.safetyInformation },
+    { title: "WHO SHOULD USE", content: product.whoShouldUse },
   ];
+
 
   const toggle = (index) => setOpen(open === index ? null : index);
 
